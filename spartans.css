@@ -1,0 +1,90 @@
+*{
+    box-sizing:border-box;
+}
+body{
+position:relative;
+width: 100%;
+height:100%;
+margin:0;
+padding:0;
+}
+img{
+    position:fixed;
+    height:100%;
+    width:100%;
+}
+.container{
+    /*position relative to body*/
+    position:relative;
+    width: 100%;
+    height:80%;
+    /*border around form*/
+    border:4px solid rgba(250,100,76,0.8);
+    /*putting form in the centre of the web page*/
+    transform:translate(50%,50%);
+    font-family: 'Yusei Magic', sans-serif;
+}
+/*styling headings*/
+.main_heading{
+    margin:0;
+    text_align: centre;
+    color:crimson;
+    background_color:pink;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.sub_heading{
+    font-size:20px;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Yusei Magic', sans-serif;
+}
+.p{
+    font-color:crimson
+}
+/*styling input fields */
+input [type="text"],
+input [type="number"],
+input [type="text"],
+input [type="email"],
+select,textarea{
+    widows: 75%;
+    border:none;
+    background-color:rgba(rgb(183, 0, 255), green, blue, alpha);
+    margin:20px 0;
+    padding:5px 0;
+    font-family: 'Merienda', cursive;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Yusei Magic', sans-serif;    
+}
+::placeholder{
+    color:orangered;
+}
+
+/*when focus shifts to input tag*/
+input [type="text"]:focus,
+input [type="number"]:focus,
+input [type="text"]:focus,
+input [type="email"]:focus,
+select:focus,
+textarea:focus{
+    outline:orangered;
+    border:5px solid tomato;
+    text-decoration:none;
+}
+/*styling button*/
+input[type="submit"]{
+    position:relative;
+    font width:80px;
+    width:50%;
+    height:80%;
+    margin_top:0;
+    border:none;
+    background-color: rgba(260,100,75/0.99)
+    /*changing cursor symbol*/
+cursor:pointer;
+color:crimson;
+font-weight:bold;
+
+}
+
